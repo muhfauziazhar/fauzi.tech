@@ -1,26 +1,16 @@
 import {
   BiEditAlt as BlogIcon,
   BiEnvelope as ContactIcon,
-  BiCategoryAlt as DashboardIcon,
   BiHomeSmile as HomeIcon,
-  BiBookBookmark as LearnIcon,
   BiLeaf as ProfileIcon,
   BiArchive as ProjectIcon,
-  BiAt as ThreadsIcon,
   BiLogoGmail as GmailIcon,
 } from 'react-icons/bi';
 import {
-  BsDiscord as DiscordIcon,
   BsGithub as GithubIcon,
-  BsInstagram as InstagramIcon,
   BsLinkedin as LinkedinIcon,
-  BsTiktok as TiktokIcon,
   BsTwitter as TwitterIcon,
-  BsYoutube as YoutubeIcon,
-  BsMailbox as MailIcon
 } from 'react-icons/bs';
-import { LuWorkflow } from 'react-icons/lu';
-
 import { MenuItemProps } from '../types/menu';
 
 const iconSize = 20;
@@ -95,7 +85,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Mail',
-    href: 'mailto:muh.fauzee@gmai.com',
+    href: 'mailto:muh.fauzee@gmail.com',
     icon: <GmailIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
