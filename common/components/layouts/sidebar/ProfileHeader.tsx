@@ -1,13 +1,8 @@
 import Link from 'next/link';
-
 import clsx from 'clsx';
 import React from 'react';
-import { MdVerified as VerifiedIcon } from 'react-icons/md';
-
 import { DEVTO_PROFILE, PROFILE_URL } from '@/common/constant';
-
 import Image from '../../elements/Image';
-import Tooltip from '../../elements/Tooltip';
 
 interface ProfileHeaderProps {
   expandMenu: boolean;

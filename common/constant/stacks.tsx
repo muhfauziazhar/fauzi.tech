@@ -1,25 +1,17 @@
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import {
-  SiApollographql,
-  SiChakraui,
   SiCss3,
-  SiExpo,
   SiExpress,
-  SiFirebase,
   SiFramer,
   SiGithub,
-  SiGraphql,
   SiGulp,
   SiHtml5,
   SiJavascript,
   SiJest,
-  SiLaravel,
   SiMui,
   SiNextdotjs,
   SiNodedotjs,
-  SiNuxtdotjs,
-  SiPhp,
   SiPrisma,
   SiReact,
   SiReacthookform,
@@ -32,13 +24,11 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVite,
-  SiVuedotjs,
-  SiWordpress,
   SiPython
 } from 'react-icons/si';
 
 type stacksProps = {
-  [key: string]: JSX.Element;
+  [key: string]: React.JSX.Element;
 };
 
 const iconSize = '100%';
