@@ -1,12 +1,19 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
 });
 
-/** @type {import('next').NextConfig} */
+const withBundleAnalyzer = require("@next/bundle-analyzer");
+/** @type {import("next").NextConfig} */
 const nextConfig = {
+  ...withBundleAnalyzer({
+    enabled: process.env.ANALYZE === "true",
+  }),
+  reactStrictMode: true,
   images: {
     domains: ['picsum.photos', 'res.cloudinary.com', 'erasysconsulting.com', 'solveeducation.org', 'tradeasia.com']
-  }
+  },
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+module.exports = withPWA(nextConfig);

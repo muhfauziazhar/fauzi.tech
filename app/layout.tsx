@@ -17,12 +17,33 @@ const soraSans = Sora({
   weight: ['300', '400', '500', '600', '700', '800']
 });
 
+const APP_NAME = "Fauzi Portfolio";
+
 export const metadata: Metadata = {
-  description: METADATA.description,
-  keywords: METADATA.keyword,
-  creator: METADATA.creator,
+  applicationName: APP_NAME,
+  title: {
+    default: APP_NAME,
+    template: "%s - PWA App",
+  },
+  creator: 'Muhammad Fauzi Azhar',
+  description: 'Personal website, portfolio, and blog of Muhammad Fauzi Azhar. A software engineer and web developer based in Indonesia.',
   authors: {
-    name: METADATA.creator,
+    name: 'Muhammad Fauzi Azhar',
+    url: process.env.DOMAIN
+  },
+  manifest: "/manifest.json",
+  themeColor: "#FFFFFF",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: APP_NAME,
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/public/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 
