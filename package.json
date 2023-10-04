@@ -10,6 +10,7 @@
     "analyze": "cross-env ANALYZE=true npm run build"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^9.7.1",
     "aos": "^2.3.4",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
